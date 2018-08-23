@@ -7,8 +7,6 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QCoreApplication::setApplicationName("Tao");
-    QCoreApplication::setOrganizationDomain("Tao");
     UniqueApp uapp;
 
     MainWindow w;

@@ -48,7 +48,7 @@ void UniqueApp::setNewAppCallback(std::function<void ()> callback)
     mCallback = callback;
     connect(&mTimer, &QTimer::timeout, this, &UniqueApp::onTimeout);
     //定时器，每隔一秒，检查共享内存
-    mTimer.start(1 * 1000);
+    mTimer.start(500);
 }
 
 void UniqueApp::onTimeout()
